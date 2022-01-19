@@ -1,0 +1,47 @@
+@import "./src/scss/vars";
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Formular", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  background-color: #fafafa;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1180px;
+}
+
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.logo {
+  svg {
+    width: 128px;
+    height: 43px;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #c3c3c3;
+}

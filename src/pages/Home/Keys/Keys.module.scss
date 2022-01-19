@@ -1,0 +1,110 @@
+@import "../../../scss/vars";
+@import "../../../scss/mixins";
+
+.keys {
+  margin-bottom: 160px;
+
+  @include media($sm) {
+    margin-bottom: 40px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px;
+  min-height: 353px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color: #f1f0f0;
+
+  @include media($lg) {
+    padding: 8px;
+    background-size: 410px;
+  }
+
+  @include media($md) {
+    justify-content: flex-start;
+    padding: 8px 8px 173px;
+    background-size: auto 148px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &.dinamo {
+    background-image: url("../../../images/keys/dinamo.png");
+  }
+
+  &.itec {
+    background-image: url("../../../images/keys/itec.png");
+  }
+
+  &.bomba {
+    background-image: url("../../../images/keys/bomba.png");
+  }
+}
+
+.date {
+  margin-bottom: 11px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #8b8b8b;
+
+  @include media($md) {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+  max-width: 352px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #8b8b8b;
+
+  @include media($md) {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+
+  span {
+    font-weight: 700;
+    color: #0b0b0b;
+  }
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+
+  @include media($md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.reading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #8b8b8b;
+}
+
+.link {
+  margin-right: 19px;
+
+  @include media($md) {
+    margin-right: 0;
+    margin-bottom: 8px;
+    width: 100%;
+
+    span {
+      width: 100%;
+    }
+  }
+}

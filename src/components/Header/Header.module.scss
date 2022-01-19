@@ -1,0 +1,111 @@
+@import "./src/scss/vars";
+@import "./src/scss/mixins";
+
+.header {
+  position: fixed;
+  z-index: 1;
+  padding: 16px 0;
+  width: 100%;
+  background-color: #fafafa;
+
+  @include media($md) {
+    position: absolute;
+    padding: 12px 0;
+  }
+
+  &.aboutPage {
+    background-color: #eeeff2;
+  }
+
+  &.dinamoPage {
+    background-color: #fff7ea;
+  }
+
+  &.itecPage {
+    background-color: #e2efed;
+  }
+
+  &.bombaPage {
+    background-color: #eeeff2;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media($md) {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  @include media($md) {
+    margin-bottom: 24px;
+  }
+}
+
+.socials {
+  display: flex;
+}
+
+.social {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.link {
+  &.telegram {
+    &:hover {
+      background-color: #2f89ce;
+    }
+
+    img {
+      margin-right: 3px;
+    }
+  }
+
+  &.behance {
+    &:hover {
+      background-color: #1c66fb;
+    }
+  }
+
+  &.linkedin {
+    &:hover {
+      background-color: #2878b7;
+    }
+  }
+
+  &.instagram {
+    &:hover {
+      background-image: linear-gradient(43.94deg, #eea054 16.16%, #d64763 50.11%, #b62a99 83.68%);
+    }
+  }
+}
+
+.items {
+  display: flex;
+
+  @include media($md) {
+    margin-bottom: 24px;
+  }
+}
+
+.item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #0b0b0b;
+
+  &:hover {
+    border-bottom: 2px solid #ee322c;
+  }
+}
